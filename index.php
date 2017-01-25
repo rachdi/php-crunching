@@ -23,7 +23,20 @@ function trouverw($dico){
 
 		}
 	}
-	echo "il yas ". strval($j)."mot qui contient la lettre  w<br>";
+	echo "il yas ". strval($j)." mots contiennent la lettre « w »<br>";
 }
 trouverw($dico);
+function terminaisonQ($dico){
+	$k=0;
+	foreach ($dico as $key => $value) {
+		# code...
+		if(substr($value, -1)==="q"){
+			$k++;
+		}
+		
+	}
+	echo "il yas ".strval($k)." mot qui se termine par q";
+}
+terminaisonQ($dico);
+
 ?>
